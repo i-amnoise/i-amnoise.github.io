@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta con Listas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0eec19;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <label>Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </li>
+
+        <div clase="radio">
+            <label>turno:</label>
+            <label for="mañana">mañana</label>
+              <input type="radio" name="curso" id="mañana">
+            <label for="tarde">tarde</label>
+              <input type="radio" name="curso" id="tarde">
+            <label for="vespertino">vespertino</label>
+              <input type="radio" name="curso" id="vespertino">
+        </div>
+
+        </li>
+        <form>
+        <div>
+            <label>curso:</label>
+              <input type="number">
+        </div>
+        </form>
+
+        <li>
+            <label>¿Qué modelo de enseñanza te gusta más?</label>
+            <label for="si">tradicional</label>
+            <input type="radio" id="si" name="grupo2" value="si" required>
+            <label for="no">cognitivista</label>
+            <input type="radio" id="no" name="grupo2" value="no" required>
+        </li> 
+
+        <li>
+            <label>para los que eligieron el modelo cognitivista:</label>
+            <label>¿Participas en clase?</label>
+            
+
+
+            <label for="si">participo</label>
+            <input type="radio" id="si" name="grupo3" value="si" required>
+            <label for="si">no participo</label>
+            <input type="radio" id="si" name ="grupo3" value="si" required>
+            <label for="si">solo participo si me preguntan</label>
+            <input type="radio" id="si" name="grupo3" value="si" required>
+            
+        </li>
+
+        <li>
+            <label>¿tenes alguna otra idea para otro metodo de enseñanza?:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        </li>
+
+    </ul>
+
+    <input type="submit" value="Enviar Encuesta">
+
+</body>
+</html>
